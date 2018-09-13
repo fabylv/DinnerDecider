@@ -2,6 +2,7 @@ package com.example.faby.dinnerdecider
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             val newFood = addFoodTxt.text.toString()
             foodList.add(newFood)
             addFoodTxt.text.clear()
+            Log.d("TAG", "This is a test log")
         }
     }
 }
